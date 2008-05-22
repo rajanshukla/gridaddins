@@ -48,8 +48,10 @@ namespace TestGridAddIns
 			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+			this.tabla = new System.Windows.Forms.TableLayoutPanel();
 			this.pnlBottom.SuspendLayout();
 			((System.ComponentModel.ISupportInitialize)(this.iGridTest)).BeginInit();
+			this.tabla.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btnFill
@@ -97,15 +99,16 @@ namespace TestGridAddIns
 			// 
 			this.gridManTest.CasoSensitivo = false;
 			this.gridManTest.Columnas = ((System.Collections.ObjectModel.Collection<string>)(resources.GetObject("gridManTest.Columnas")));
+			this.gridManTest.Dock = System.Windows.Forms.DockStyle.Fill;
 			this.gridManTest.EstiloResaltadoBgColor = System.Drawing.Color.LightBlue;
 			this.gridManTest.EstiloResaltadoFgColor = System.Drawing.Color.DarkBlue;
 			this.gridManTest.EstiloResaltadoFuente = System.Drawing.FontStyle.Regular;
-			this.gridManTest.Location = new System.Drawing.Point(3, 2);
+			this.gridManTest.Location = new System.Drawing.Point(3, 3);
 			this.gridManTest.MostrarCombo = false;
 			this.gridManTest.Name = "gridManTest";
 			this.gridManTest.NombreDataGridView = "";
 			this.gridManTest.Operacion = GridAddIns.GridManagerOperaciones.Filtrado;
-			this.gridManTest.Size = new System.Drawing.Size(633, 42);
+			this.gridManTest.Size = new System.Drawing.Size(833, 42);
 			this.gridManTest.TabIndex = 8;
 			this.gridManTest.TabStop = false;
 			this.gridManTest.Text = "Buscar...";
@@ -126,7 +129,8 @@ namespace TestGridAddIns
 									this.Column3,
 									this.Column4,
 									this.Column5});
-			this.iGridTest.Location = new System.Drawing.Point(3, 50);
+			this.iGridTest.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.iGridTest.Location = new System.Drawing.Point(3, 51);
 			this.iGridTest.MultiSelect = false;
 			this.iGridTest.Name = "iGridTest";
 			this.iGridTest.ReadOnly = true;
@@ -134,7 +138,7 @@ namespace TestGridAddIns
 			this.iGridTest.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
 			this.iGridTest.ShowDeleteCollumn = false;
 			this.iGridTest.ShowEditCollumn = false;
-			this.iGridTest.Size = new System.Drawing.Size(824, 388);
+			this.iGridTest.Size = new System.Drawing.Size(833, 390);
 			this.iGridTest.TabIndex = 9;
 			// 
 			// Column1
@@ -172,21 +176,37 @@ namespace TestGridAddIns
 			this.Column5.ReadOnly = true;
 			this.Column5.Width = 73;
 			// 
+			// tabla
+			// 
+			this.tabla.ColumnCount = 1;
+			this.tabla.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
+			this.tabla.Controls.Add(this.gridManTest, 0, 0);
+			this.tabla.Controls.Add(this.iGridTest, 0, 1);
+			this.tabla.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.tabla.Location = new System.Drawing.Point(0, 0);
+			this.tabla.Name = "tabla";
+			this.tabla.RowCount = 2;
+			this.tabla.RowStyles.Add(new System.Windows.Forms.RowStyle());
+			this.tabla.RowStyles.Add(new System.Windows.Forms.RowStyle());
+			this.tabla.Size = new System.Drawing.Size(839, 444);
+			this.tabla.TabIndex = 2;
+			// 
 			// TestForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(839, 475);
-			this.Controls.Add(this.iGridTest);
-			this.Controls.Add(this.gridManTest);
+			this.Controls.Add(this.tabla);
 			this.Controls.Add(this.pnlBottom);
 			this.Name = "TestForm";
 			this.Text = "Test iGrid Form";
 			this.Load += new System.EventHandler(this.TestFormLoad);
 			this.pnlBottom.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize)(this.iGridTest)).EndInit();
+			this.tabla.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.TableLayoutPanel tabla;
 		private System.Windows.Forms.Panel pnlBottom;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
 		private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
