@@ -40,5 +40,23 @@ namespace TestGridAddIns
 		{
 			this.iGridTest.Rows.Clear();
 		}
+		
+		void TestFormLoad(object sender, EventArgs e)
+		{
+			for (int i = 1; i < 200; i++)
+			{
+				Prueba p = new Prueba(i);
+				p.LlenarAleatorio();
+				this.Pruebas.Add(p);
+			}
+			this.iGridTest.Rows.Clear();
+			foreach(Prueba p in this.Pruebas)
+			{
+				this.iGridTest.Rows.Add(
+					new object[]{
+					p.Campo1,p.Campo2,p.Campo3,p.Campo4,p.Campo5
+					});
+			}
+		}
 	}
 }
