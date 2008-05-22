@@ -4,6 +4,8 @@ Microsoft Visual Studio Solution File, Format Version 9.00
 # SharpDevelop 2.2.1.2648
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GridAddIns", "GridAddIns.csproj", "{A3ABA1D5-FEDD-4576-B9AD-BD7444773ABD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGridAddIns", "TestGridAddIns\TestGridAddIns.csproj", "{6952D91A-E4F3-47E2-A2E0-B7DBC4878D59}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -14,5 +16,13 @@ Global
 		{A3ABA1D5-FEDD-4576-B9AD-BD7444773ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{A3ABA1D5-FEDD-4576-B9AD-BD7444773ABD}.Release|Any CPU.Build.0 = Release|Any CPU
 		{A3ABA1D5-FEDD-4576-B9AD-BD7444773ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80E14CF8-3D37-4E1F-87C5-22B4716B80C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80E14CF8-3D37-4E1F-87C5-22B4716B80C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80E14CF8-3D37-4E1F-87C5-22B4716B80C1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{80E14CF8-3D37-4E1F-87C5-22B4716B80C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6952D91A-E4F3-47E2-A2E0-B7DBC4878D59}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6952D91A-E4F3-47E2-A2E0-B7DBC4878D59}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6952D91A-E4F3-47E2-A2E0-B7DBC4878D59}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6952D91A-E4F3-47E2-A2E0-B7DBC4878D59}.Release|Any CPU.ActiveCfg = Release|Any CPU
 	EndGlobalSection
 EndGlobal
