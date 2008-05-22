@@ -37,82 +37,20 @@ namespace TestGridAddIns
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(TestForm));
+			this.btnFill = new System.Windows.Forms.Button();
+			this.btnClear = new System.Windows.Forms.Button();
+			this.btnGen = new System.Windows.Forms.Button();
+			this.pnlBottom = new System.Windows.Forms.Panel();
+			this.gridManTest = new GridAddIns.GridManager();
 			this.iGridTest = new GridAddIns.iGrid();
 			this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
 			this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-			this.btnFill = new System.Windows.Forms.Button();
-			this.btnClear = new System.Windows.Forms.Button();
-			this.btnGen = new System.Windows.Forms.Button();
-			this.pnlBottom = new System.Windows.Forms.Panel();
-			this.gridManTest = new GridAddIns.GridManager();
-			((System.ComponentModel.ISupportInitialize)(this.iGridTest)).BeginInit();
 			this.pnlBottom.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize)(this.iGridTest)).BeginInit();
 			this.SuspendLayout();
-			// 
-			// iGridTest
-			// 
-			this.iGridTest.ActualPage = 0;
-			this.iGridTest.AllowUserToAddRows = false;
-			this.iGridTest.AllowUserToDeleteRows = false;
-			this.iGridTest.AllRows = ((System.Collections.Generic.List<object[]>)(resources.GetObject("iGridTest.AllRows")));
-			this.iGridTest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
-			this.iGridTest.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
-			this.iGridTest.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
-			this.iGridTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.iGridTest.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-									this.Column1,
-									this.Column2,
-									this.Column3,
-									this.Column4,
-									this.Column5});
-			this.iGridTest.Location = new System.Drawing.Point(3, 49);
-			this.iGridTest.MultiSelect = false;
-			this.iGridTest.Name = "iGridTest";
-			this.iGridTest.ReadOnly = true;
-			this.iGridTest.RowsPerPage = 10;
-			this.iGridTest.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-			this.iGridTest.ShowDeleteCollumn = false;
-			this.iGridTest.ShowEditCollumn = false;
-			this.iGridTest.Size = new System.Drawing.Size(827, 389);
-			this.iGridTest.TabIndex = 0;
-			// 
-			// Column1
-			// 
-			this.Column1.HeaderText = "Column1";
-			this.Column1.Name = "Column1";
-			this.Column1.ReadOnly = true;
-			this.Column1.Width = 73;
-			// 
-			// Column2
-			// 
-			this.Column2.HeaderText = "Column2";
-			this.Column2.Name = "Column2";
-			this.Column2.ReadOnly = true;
-			this.Column2.Width = 73;
-			// 
-			// Column3
-			// 
-			this.Column3.HeaderText = "Column3";
-			this.Column3.Name = "Column3";
-			this.Column3.ReadOnly = true;
-			this.Column3.Width = 73;
-			// 
-			// Column4
-			// 
-			this.Column4.HeaderText = "Column4";
-			this.Column4.Name = "Column4";
-			this.Column4.ReadOnly = true;
-			this.Column4.Width = 73;
-			// 
-			// Column5
-			// 
-			this.Column5.HeaderText = "Column5";
-			this.Column5.Name = "Column5";
-			this.Column5.ReadOnly = true;
-			this.Column5.Width = 73;
 			// 
 			// btnFill
 			// 
@@ -162,28 +100,91 @@ namespace TestGridAddIns
 			this.gridManTest.EstiloResaltadoBgColor = System.Drawing.Color.LightBlue;
 			this.gridManTest.EstiloResaltadoFgColor = System.Drawing.Color.DarkBlue;
 			this.gridManTest.EstiloResaltadoFuente = System.Drawing.FontStyle.Regular;
-			this.gridManTest.Location = new System.Drawing.Point(3, 1);
+			this.gridManTest.Location = new System.Drawing.Point(3, 2);
 			this.gridManTest.MostrarCombo = false;
 			this.gridManTest.Name = "gridManTest";
 			this.gridManTest.NombreDataGridView = "";
 			this.gridManTest.Operacion = GridAddIns.GridManagerOperaciones.Filtrado;
-			this.gridManTest.Size = new System.Drawing.Size(524, 42);
-			this.gridManTest.TabIndex = 6;
+			this.gridManTest.Size = new System.Drawing.Size(633, 42);
+			this.gridManTest.TabIndex = 8;
 			this.gridManTest.TabStop = false;
 			this.gridManTest.Text = "Buscar...";
+			// 
+			// iGridTest
+			// 
+			this.iGridTest.ActualPage = 0;
+			this.iGridTest.AllowUserToAddRows = false;
+			this.iGridTest.AllowUserToDeleteRows = false;
+			this.iGridTest.AllRows = ((System.Collections.Generic.List<object[]>)(resources.GetObject("iGridTest.AllRows")));
+			this.iGridTest.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.DisplayedCells;
+			this.iGridTest.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllHeaders;
+			this.iGridTest.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleVertical;
+			this.iGridTest.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.iGridTest.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+									this.Column1,
+									this.Column2,
+									this.Column3,
+									this.Column4,
+									this.Column5});
+			this.iGridTest.Location = new System.Drawing.Point(3, 50);
+			this.iGridTest.MultiSelect = false;
+			this.iGridTest.Name = "iGridTest";
+			this.iGridTest.ReadOnly = true;
+			this.iGridTest.RowsPerPage = 10;
+			this.iGridTest.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.iGridTest.ShowDeleteCollumn = false;
+			this.iGridTest.ShowEditCollumn = false;
+			this.iGridTest.Size = new System.Drawing.Size(824, 388);
+			this.iGridTest.TabIndex = 9;
+			// 
+			// Column1
+			// 
+			this.Column1.HeaderText = "Column1";
+			this.Column1.Name = "Column1";
+			this.Column1.ReadOnly = true;
+			this.Column1.Width = 73;
+			// 
+			// Column2
+			// 
+			this.Column2.HeaderText = "Column2";
+			this.Column2.Name = "Column2";
+			this.Column2.ReadOnly = true;
+			this.Column2.Width = 73;
+			// 
+			// Column3
+			// 
+			this.Column3.HeaderText = "Column3";
+			this.Column3.Name = "Column3";
+			this.Column3.ReadOnly = true;
+			this.Column3.Width = 73;
+			// 
+			// Column4
+			// 
+			this.Column4.HeaderText = "Column4";
+			this.Column4.Name = "Column4";
+			this.Column4.ReadOnly = true;
+			this.Column4.Width = 73;
+			// 
+			// Column5
+			// 
+			this.Column5.HeaderText = "Column5";
+			this.Column5.Name = "Column5";
+			this.Column5.ReadOnly = true;
+			this.Column5.Width = 73;
 			// 
 			// TestForm
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(839, 475);
+			this.Controls.Add(this.iGridTest);
 			this.Controls.Add(this.gridManTest);
 			this.Controls.Add(this.pnlBottom);
-			this.Controls.Add(this.iGridTest);
 			this.Name = "TestForm";
 			this.Text = "Test iGrid Form";
-			((System.ComponentModel.ISupportInitialize)(this.iGridTest)).EndInit();
+			this.Load += new System.EventHandler(this.TestFormLoad);
 			this.pnlBottom.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize)(this.iGridTest)).EndInit();
 			this.ResumeLayout(false);
 		}
 		private System.Windows.Forms.Panel pnlBottom;
