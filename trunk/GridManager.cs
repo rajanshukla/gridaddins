@@ -265,10 +265,15 @@ namespace GridAddIns
 			//y hasta ese entonces es posible que reconozca al formulario como su padre, y de esta forma
 			//conocer a sus otros controles como el DataGridView asociado
 			base.InitLayout();
-			if(this.Parent is ContainerControl)
-				((ContainerControl)this.Parent).Paint += new PaintEventHandler(this.Cargar);
-			if(this.Parent is Panel)
-				((Panel)this.Parent).Paint += new PaintEventHandler(this.Cargar);
+			try{
+				((Form)this.Parent).Load += new EventHandler(this.Cargar);
+			}catch (Exception ex1){
+				try{
+					((Control)this.Parent).Enter += new EventHandler(this.Cargar);
+				}catch (Exception ex2){
+					//pass
+				}
+			}
 		}
 		
 		/// <summary>
